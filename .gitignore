@@ -1,7 +1,15 @@
-# .NET
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# .NET build output
 bin/
 obj/
 
 # Secrets
+appsettings.json
 appsettings.Development.json
-.env
+
+# Logs
+*.log
