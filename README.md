@@ -3,7 +3,7 @@
 ChatiCO is a real-time chat application built with React (Frontend) and ASP.NET Core Web API (Backend) using SignalR for real-time communication.
 The project follows Clean Architecture and uses a Hybrid ORM approach for optimized data access.
 
-🚀 Features
+-- Features
 🔐 Authentication
 
 OTP-based login using Twilio
@@ -79,42 +79,9 @@ Twilio – OTP delivery
 
 Cloudinary – Image upload & media storage
 
-🧱 Architecture
-
-Architecture Style: Clean Architecture / Three-Tier
-
-Frontend (React)
-     ↓
-API Controllers
-     ↓
-Application Layer (DTOs, Services)
-     ↓
-Domain Layer (Entities)
-     ↓
-Infrastructure Layer (EF Core, Dapper, SignalR)
-     ↓
-SQL Server
 
 
-Dapper improves read performance
-
-EF Core ensures transactional integrity for writes
-
-SignalR enables real-time messaging
-
-🔄 Data Flow
-
-User requests OTP → Stored in In-Memory Cache → Sent via Twilio
-
-OTP verification → JWT issued
-
-User connects to chat → SignalR Hub established
-
-Messages stored in SQL Server
-
-Media uploaded to Cloudinary → URL saved in DB
-
-📦 Modules
+-- Modules
 1️⃣ Authentication Module
 
 OTP generation & validation
@@ -148,3 +115,4 @@ Read receipts
 Image upload via Cloudinary
 
 Media message handling
+
