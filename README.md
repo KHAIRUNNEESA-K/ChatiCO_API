@@ -1,118 +1,118 @@
-💬 ChatiCO – Real-Time Chat Application
+# ChatiCO – Real-Time Chat Application
 
-ChatiCO is a real-time chat application built with React (Frontend) and ASP.NET Core Web API (Backend) using SignalR for real-time communication.
-The project follows Clean Architecture and uses a Hybrid ORM approach for optimized data access.
+ChatiCO is a real-time chat application built using React for the frontend and ASP.NET Core Web API for the backend.
+It uses SignalR for real-time communication and follows Clean Architecture with a Hybrid ORM approach for better performance and maintainability.
 
--- Features
-🔐 Authentication
+Features
 
-OTP-based login using Twilio
+Authentication
 
-OTP stored temporarily using In-Memory Cache
+- OTP-based login using Twilio
 
-JWT-based authentication & authorization
+- OTP stored temporarily using in-memory cache
 
-👤 User Management
+- JWT-based authentication and authorization
 
-View all registered users
+User Management
 
-Add users to contacts for chatting
+- View all registered users
 
-Edit profile (Name, Bio, Profile Picture)
+- Add users to contacts for chatting
 
-Profile image upload using Cloudinary
+- Edit user profile (name, bio, profile picture)
 
-Online / Offline status & last seen
+- Upload profile images using Cloudinary
 
-Block & unblock users
+- Online and offline status tracking
 
-💬 Chat System
+- Last seen information
 
-One-to-one real-time chat
+- Block and unblock users
 
-Group chat
+Chat System
 
-Archive chats
+- One-to-one real-time chat
 
-Delete messages (soft delete)
+- Group chat
 
-Read & delivery status
+- Archive chats
 
-Typing indicators
+- Soft delete messages
 
-Real-time updates using SignalR
+- Message read and delivery status
 
-🛠️ Tech Stack
+- Typing indicators
+
+- Real-time updates using SignalR
+
+Tech Stack
+
 Frontend
+- React.js
 
-React.js
+- JavaScript
 
-JavaScript
+- Tailwind CSS
 
-Tailwind CSS
+- EST API integration
 
-REST API integration
-
-SignalR client
+- SignalR client
 
 Backend
 
-ASP.NET Core Web API (.NET 8)
+- ASP.NET Core Web API (.NET 8)
 
-SignalR (WebSockets)
+- SignalR (WebSockets)
 
-JWT Authentication
+- JWT authentication
 
-In-Memory Cache (OTP)
+- In-memory cache for OTP
 
-Hybrid ORM:
+- Hybrid ORM approach:
 
-Dapper – Read (GET) operations
+     - Dapper for read (GET) operations
 
-Entity Framework Core – Write (POST, PUT, PATCH, DELETE)
+     - Entity Framework Core for write operations (POST, PUT, PATCH, DELETE)
 
-SQL Server
+- SQL Server
 
 Third-Party Services
 
-Twilio – OTP delivery
+- Twilio for OTP delivery
 
-Cloudinary – Image upload & media storage
+- Cloudinary for image upload and media storage
 
+Modules
 
+Authentication Module
+- OTP generation and validation
 
--- Modules
-1️⃣ Authentication Module
+- JWT-based authentication
 
-OTP generation & validation
+- Secure login and logout
 
-JWT authentication
+User Module
 
-Secure login & logout
+- User profile management
 
-2️⃣ User Module
+- View all users
 
-Profile management
+- Add contacts
 
-View all users
+- Block and unblock users
 
-Add contacts
+Chat Module
 
-Block / unblock users
+- One-to-one and group chat
 
-3️⃣ Chat Module
+- Archive chat functionality
 
-One-to-one & group chat
+- Soft delete messages
 
-Archive chat
+- Message read receipts
 
-Soft delete messages
+Media Module
 
-Read receipts
+- Image upload using Cloudinary
 
-4️⃣ Media Module
-
-Image upload via Cloudinary
-
-Media message handling
-
+- Media message handling
