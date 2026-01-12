@@ -1,7 +1,7 @@
+# .NET
 bin/
 obj/
-.vs/
-*.user
-*.suo
-*.cache
-*.log
+
+# Secrets
+appsettings.Development.json
+.env
