@@ -1,0 +1,611 @@
+[
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ArchiveController",
+    "Method": "AddArchive",
+    "RelativePath": "api/Archive/add-to-archive",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChatiCO.Application.DTOs.ArchiveRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ArchiveController",
+    "Method": "GetArchivedChats",
+    "RelativePath": "api/Archive/get-archive",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ArchiveController",
+    "Method": "RemoveArchive",
+    "RelativePath": "api/Archive/remove-from-archive/{contactId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "AddContact",
+    "RelativePath": "api/Contact/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChatiCO.Application.DTOs.AddContactRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "GetAllOtherUsers",
+    "RelativePath": "api/Contact/all-other-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "GetAvailableUsers",
+    "RelativePath": "api/Contact/available-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "BlockContact",
+    "RelativePath": "api/Contact/block/{contactId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "GetBlockedContacts",
+    "RelativePath": "api/Contact/blocked-contacts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "DeleteContact",
+    "RelativePath": "api/Contact/delete/{contactId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "GetMyContacts",
+    "RelativePath": "api/Contact/my-contacts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.ContactController",
+    "Method": "UnblockContact",
+    "RelativePath": "api/Contact/unblock/{contactId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "DeleteGroup",
+    "RelativePath": "api/Group/{groupId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "GetMembers",
+    "RelativePath": "api/Group/{groupId}/members",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "GetHistory",
+    "RelativePath": "api/Group/{groupId}/messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "AddMembers",
+    "RelativePath": "api/Group/add-members",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChatiCO.Application.DTOs.GroupMemberAddDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "CreateGroup",
+    "RelativePath": "api/Group/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GroupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GroupProfilePic",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "MemberIds",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "GetMyCreatedGroups",
+    "RelativePath": "api/Group/my-created-groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "GetMyGroups",
+    "RelativePath": "api/Group/my-groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Group/send-message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GroupId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SenderId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MessageType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TextContent",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "TempId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "GetSingleGroup",
+    "RelativePath": "api/Group/single/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.GroupController",
+    "Method": "UpdateGroup",
+    "RelativePath": "api/Group/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GroupId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "GroupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProfilePic",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.MessageController",
+    "Method": "MarkAsDelivered",
+    "RelativePath": "api/Message/delivered/{messageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.MessageController",
+    "Method": "GetMessages",
+    "RelativePath": "api/Message/get-messages/{receiverId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "receiverId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.MessageController",
+    "Method": "GetLastMessage",
+    "RelativePath": "api/Message/last/{receiverId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "receiverId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.MessageController",
+    "Method": "MarkAsRead",
+    "RelativePath": "api/Message/read/{messageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.MessageController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Message/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ReceiverId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MessageType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "TempId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.MessageController",
+    "Method": "GetUnreadCount",
+    "RelativePath": "api/Message/unread/{contactId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contactId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.PresenceController",
+    "Method": "Get",
+    "RelativePath": "api/Presence/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controller.UserLoginController",
+    "Method": "Login",
+    "RelativePath": "api/UserLogin/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "ChatiCO.Application.DTOs.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controller.UserLoginController",
+    "Method": "VerifyLoginOtp",
+    "RelativePath": "api/UserLogin/verify-login-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChatiCO.Application.DTOs.VerifyLoginOtpdto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.UserProfileController",
+    "Method": "GetProfile",
+    "RelativePath": "api/UserProfile/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.UserProfileController",
+    "Method": "UpdateBio",
+    "RelativePath": "api/UserProfile/update-bio",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChatiCO.Application.DTOs.UpdateBioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.UserProfileController",
+    "Method": "UpdateName",
+    "RelativePath": "api/UserProfile/update-name",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChatiCO.Application.DTOs.UpdateNameDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controllers.UserProfileController",
+    "Method": "UpdateProfilePicture",
+    "RelativePath": "api/UserProfile/update-profile-picture",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controller.UserRegistrationController",
+    "Method": "GetUser",
+    "RelativePath": "api/UserRegistration/GetUser/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controller.UserRegistrationController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/UserRegistration/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "ChatiCO.Application.DTOs.RegisterRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatiCO.API.Controller.UserRegistrationController",
+    "Method": "VerifyRegistrationAsync",
+    "RelativePath": "api/UserRegistration/verify-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChatiCO.Application.DTOs.VerifyRegistrationOtpDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
